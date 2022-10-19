@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+   <link rel="stylesheet"href="style.css"/>
+   <script>
+    let count=0;
+  function clickme()
+  {
+    count++;
+    console.log('clicked...'+count+'times...')
+  }
+  function inc(){
+    count++;
+    document.getElementById("totalclick").innerHTML =count;
+  }
+  function defvalue(){
+    count=1;
+    document.getElementById("totalclick").innerHTML =count;
+
+  }
+  function dec(){
+    count--;
+    document.getElementById("totalclick").innerHTML =count;
+  }
+  </script>
+
+
+
+    .
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/detials.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="detial-container">
+
+        <div class="detial-left">
+            <img class="detial-img" src="bag.jpg" />
+            <button onclick="inc(1)"class="plus-minus" > + </button></b>
+      <button id="totalclick"class="totalclick" > 1 </button>
+      <button onclick="dec(-1)"class="plus-minus" >-</button>
+        </div>
+
+        <div class="detial-right">
+            <span class="right-content">Northzone Lightweight Bag</span><br>
+            <p class="para-detial">
+              Northzone Lightweight school bags Backpacks for Boys Girls Stylish men and women Casual Travel Laptop Bag College office (Navy Blue) 30 L</p>
+            
+            <span class="brand">Brand:<span style="color:green;"> &nbsp;North Zone</span> </span><br><br>
+
+
+            <div class="stars">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ratings:
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star "></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(400)</span>
+            </div>
+
+
+            <span class="mrp">₹699.00 </span><span style="color:#b2bec3;"> MRP:<del>₹999.00</del> <span
+                    style="color:tomato;"> 38% OFF</span> <br><br>
+                <span class="brand">Avilability:<span style="color:green;"> In-Stock</span> </span><br><br>
+                <br>
+                <a href="../payment.html"> <button class="detial-buy">Buy Now</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
